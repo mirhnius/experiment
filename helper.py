@@ -2,7 +2,7 @@ from random import sample
 import pathlib
 from nilearn.decomposition import CanICA
 
-def DBM_sample_filename(r):
+def DBM_sample_filename(r): # rerwite with zfill
     # dir_ = "/mnt/out/out_2/vol"
     dir_ = "/data/origami/niusha/out/out_s/"
     if r>=0 and r<=9:
