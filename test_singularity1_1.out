@@ -1,0 +1,19 @@
+/data/origami/niusha/code/experiment/test/1
+/data/origami/niusha/code/experiment/test/1
+/data/origami/niusha/code/experiment/test/1
+singularity-ce version 3.10.2-bionic
+test_singularity_fsl.sh is running
+test_singularity_fsl.sh is running
+data_type      FLOAT32
+dim1           101
+dim2           119
+dim3           97
+dim4           349
+datatype       16
+pixdim1        2.000000
+pixdim2        2.000000
+pixdim3        2.000000
+pixdim4        1.000000
+cal_max        0.0000
+cal_min        0.0000
+file_type      NIFTI-1+

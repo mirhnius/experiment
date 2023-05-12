@@ -1,0 +1,22 @@
+/opt/sge/default/spool/node20/job_scripts/5350999: line 17: [!: command not found
+/opt/sge/default/spool/node17/job_scripts/5351000: line 17: [: missing `]'
+FATAL:   container creation failed: unable to add /data/origami/niusha/code/test to mount list: destination must be an absolute path
+FATAL:   container creation failed: mount /data/origami/niusha/code/test->/mnt error: while mounting /data/origami/niusha/code/test: mount source /data/origami/niusha/code/test doesn't exist
+/opt/sge/default/spool/node24/job_scripts/5351010: line 38: fslinfo: command not found
+/opt/sge/default/spool/node29/job_scripts/5351031: line 37: fslinfo: command not found
+FATAL:   could not open image /data/origami/niusha/code/experiment/test/test-1-working/ : failed to retrieve path for /data/origami/niusha/code/experiment/test/test-1-working/ : lstat /data/origami/niusha/code/experiment/test/test-1-working/ : no such file or directory
+/opt/sge/default/spool/node30/job_scripts/5352138: line 35: -c: command not found
+FATAL:   could not open image /data/origami/niusha/code/experiment/test/test-1-working/ : failed to retrieve path for /data/origami/niusha/code/experiment/test/test-1-working/ : lstat /data/origami/niusha/code/experiment/test/test-1-working/ : no such file or directory
+/opt/sge/default/spool/node30/job_scripts/5352139: line 35: -c: command not found
+/opt/sge/default/spool/node30/job_scripts/5352140: line 36: -c: command not found
+/opt/sge/default/spool/node30/job_scripts/5352141: line 36: bash test_singularity_fsl.sh && /bin/bash -norc: No such file or directory
+/opt/sge/default/spool/node30/job_scripts/5352142: line 36: bash test_singularity_fsl.sh && /bin/bash -norc: No such file or directory
+/opt/sge/default/spool/node30/job_scripts/5352143: line 36: /data/origami/niusha/code/experiment/test_singularity_fsl.sh: Permission denied
+/opt/sge/default/spool/node30/job_scripts/5352144: line 36: /mnt/test_singularity_fsl.sh: No such file or directory
+/opt/sge/default/spool/node28/job_scripts/5352146: line 36: -c: command not found
+/opt/sge/default/spool/node26/job_scripts/5352147: line 36: bash /data/origami/niusha/code/experiment/test_singularity_fsl.sh && /bin/bash -norc: No such file or directory
+FATAL:   "--bind": executable file not found in $PATH
+/opt/sge/default/spool/node26/job_scripts/5352148: line 36: /data/origami/niusha/code/experiment/test_singularity_fsl.sh: Permission denied
+FATAL:   "--bind": executable file not found in $PATH
+/opt/sge/default/spool/node26/job_scripts/5352149: line 36: -c: command not found
+ERROR: Could not open file
