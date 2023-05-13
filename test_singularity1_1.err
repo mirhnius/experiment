@@ -20,3 +20,110 @@ FATAL:   "--bind": executable file not found in $PATH
 FATAL:   "--bind": executable file not found in $PATH
 /opt/sge/default/spool/node26/job_scripts/5352149: line 36: -c: command not found
 ERROR: Could not open file
+cp: cannot stat '/data/origami/niusha/out/out_2/vol0000.nii.gz': No such file or directory
+cp: cannot stat '/data/origami/niusha/out/out_2/vol0000.nii.gz': No such file or directory
+/mnt/code/test_singularity_fsl.sh: line 4: cd: /data/origami/niusha/code/experiment/test/test-1-working: No such file or directory
+cp: cannot stat '/data/origami/niusha/out/out_2/vol0000.nii.gz': No such file or directory
+/mnt/code/test_singularity_fsl.sh: line 4: cd: /data/origami/niusha/code/experiment/test/test-1-working: No such file or directory
+cp: cannot stat '/data/origami/niusha/out/out_2/vol0000.nii.gz': No such file or directory
+WARNING: skipping mount of /data/origami/niusha/code/local-experiment/test: stat /data/origami/niusha/code/local-experiment/test: no such file or directory
+FATAL:   container creation failed: mount /data/origami/niusha/code/local-experiment/test->/mnt/out error: while mounting /data/origami/niusha/code/local-experiment/test: mount source /data/origami/niusha/code/local-experiment/test doesn't exist
+/opt/sge/default/spool/node19/job_scripts/5368632: line 44: OUTPUT: command not found
+/opt/sge/default/spool/node19/job_scripts/5368632: line 45: [!: command not found
+cp: cannot stat '/data/origami/niusha/out/out_2/vol0000.nii.gz': No such file or directory
+WARNING: skipping mount of /data/origami/niusha/code/local-experiment/test: stat /data/origami/niusha/code/local-experiment/test: no such file or directory
+FATAL:   container creation failed: mount /data/origami/niusha/code/local-experiment/test->/mnt/out error: while mounting /data/origami/niusha/code/local-experiment/test: mount source /data/origami/niusha/code/local-experiment/test doesn't exist
+/opt/sge/default/spool/node17/job_scripts/5368633: line 44: OUTPUT: command not found
+/opt/sge/default/spool/node17/job_scripts/5368633: line 45: [!: command not found
+cp: cannot stat '/data/origami/niusha/out/out_2/vol0000.nii.gz': No such file or directory
+WARNING: skipping mount of /data/origami/niusha/code/local-experiment/test: stat /data/origami/niusha/code/local-experiment/test: no such file or directory
+FATAL:   container creation failed: mount /data/origami/niusha/code/local-experiment/test->/mnt/out error: while mounting /data/origami/niusha/code/local-experiment/test: mount source /data/origami/niusha/code/local-experiment/test doesn't exist
+/opt/sge/default/spool/node25/job_scripts/5368634: line 44: OUTPUT: command not found
+/opt/sge/default/spool/node25/job_scripts/5368634: line 45: [!: command not found
+cp: cannot stat '/data/origami/niusha/out/out_2/vol0000.nii.gz': No such file or directory
+Image Exception : #99 :: Out of memory
+
+
+
+An exception has been thrown
+Out of memory
+/opt/sge/default/spool/node25/job_scripts/5368635: line 44: OUTPUT: command not found
+/opt/sge/default/spool/node25/job_scripts/5368635: line 45: [!: command not found
+cp: cannot stat '/data/origami/niusha/out/out_2/vol0000.nii.gz': No such file or directory
+Image Exception : #99 :: Out of memory
+
+
+
+An exception has been thrown
+Out of memory
+/opt/sge/default/spool/node26/job_scripts/5368636: line 44: OUTPUT: command not found
+/opt/sge/default/spool/node26/job_scripts/5368636: line 45: [!: command not found
+cp: cannot stat '/data/origami/niusha/out/out_2/vol0000.nii.gz': No such file or directory
+Image Exception : #99 :: Out of memory
+
+
+
+An exception has been thrown
+Out of memory
+Image Exception : #99 :: Out of memory
+
+
+
+An exception has been thrown
+Out of memory
+Image Exception : #99 :: Out of memory
+
+
+
+An exception has been thrown
+Out of memory
+runtime/cgo: pthread_create failed: Resource temporarily unavailable
+/opt/sge/default/spool/node30/job_scripts/5368653: line 40: 40666 Aborted                 singularity exec --bind /data/origami/niusha/code/experiment:/mnt/code --bind /data/origami/niusha/input:/mnt/input:ro /data/origami/niusha/fsl_python.sif /mnt/code/test_singularity_fsl.sh
+fatal error: failed to reserve page summary memory
+
+runtime stack:
+runtime.throw({0x5583809ccc44?, 0x55837fda8f65?})
+	runtime/panic.go:992 +0x71 fp=0x7ffe01673348 sp=0x7ffe01673318 pc=0x55837fdd3cd1
+runtime.(*pageAlloc).sysInit(0x5583818e8588)
+	runtime/mpagealloc_64bit.go:78 +0x153 fp=0x7ffe016733c8 sp=0x7ffe01673348 pc=0x55837fdc9513
+runtime.(*pageAlloc).init(0x5583818e8588, 0x5583818e8580, 0x0?)
+	runtime/mpagealloc.go:331 +0x70 fp=0x7ffe016733f0 sp=0x7ffe016733c8 pc=0x55837fdc6fd0
+runtime.(*mheap).init(0x5583818e8580)
+	runtime/mheap.go:723 +0x125 fp=0x7ffe01673428 sp=0x7ffe016733f0 pc=0x55837fdc4305
+runtime.mallocinit()
+	runtime/malloc.go:487 +0xca fp=0x7ffe01673450 sp=0x7ffe01673428 pc=0x55837fda754a
+runtime.schedinit()
+	runtime/proc.go:691 +0xab fp=0x7ffe016734b0 sp=0x7ffe01673450 pc=0x55837fdd786b
+runtime.rt0_go()
+	runtime/asm_amd64.s:322 +0x120 fp=0x7ffe016734b8 sp=0x7ffe016734b0 pc=0x55837fe03740
+fatal error: failed to reserve page summary memory
+
+runtime stack:
+runtime.throw({0x55f9cbb15c44?, 0x55f9caef1f65?})
+	runtime/panic.go:992 +0x71 fp=0x7ffd0aa99f48 sp=0x7ffd0aa99f18 pc=0x55f9caf1ccd1
+runtime.(*pageAlloc).sysInit(0x55f9cca31588)
+	runtime/mpagealloc_64bit.go:78 +0x153 fp=0x7ffd0aa99fc8 sp=0x7ffd0aa99f48 pc=0x55f9caf12513
+runtime.(*pageAlloc).init(0x55f9cca31588, 0x55f9cca31580, 0x0?)
+	runtime/mpagealloc.go:331 +0x70 fp=0x7ffd0aa99ff0 sp=0x7ffd0aa99fc8 pc=0x55f9caf0ffd0
+runtime.(*mheap).init(0x55f9cca31580)
+	runtime/mheap.go:723 +0x125 fp=0x7ffd0aa9a028 sp=0x7ffd0aa99ff0 pc=0x55f9caf0d305
+runtime.mallocinit()
+	runtime/malloc.go:487 +0xca fp=0x7ffd0aa9a050 sp=0x7ffd0aa9a028 pc=0x55f9caef054a
+runtime.schedinit()
+	runtime/proc.go:691 +0xab fp=0x7ffd0aa9a0b0 sp=0x7ffd0aa9a050 pc=0x55f9caf2086b
+runtime.rt0_go()
+	runtime/asm_amd64.s:322 +0x120 fp=0x7ffd0aa9a0b8 sp=0x7ffd0aa9a0b0 pc=0x55f9caf4c740
+cp: error while loading shared libraries: libc.so.6: failed to map segment from shared object
+/opt/sge/default/spool/node17/job_scripts/5368656: line 40: 29679 Segmentation fault      singularity exec --bind /data/origami/niusha/code/experiment:/mnt/code --bind /data/origami/niusha/input:/mnt/input:ro /data/origami/niusha/fsl_python.sif /mnt/code/test_singularity_fsl.sh
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+/mnt/code/test_singularity_fsl.sh: line 8:  5637 Aborted                 (core dumped) melodic -i /mnt/input/DBM_data.nii -o /mnt/code/test/test-1 -d 30 --Oall
+Image Exception : #99 :: Out of memory
+
+
+
+An exception has been thrown
+Out of memory
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc
+/mnt/code/test_singularity_fsl.sh: line 8: 31442 Aborted                 (core dumped) melodic -i /mnt/input/DBM_data.nii -o /mnt/code/test/test-1 -d 30 --Oall

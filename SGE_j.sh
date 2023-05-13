@@ -2,7 +2,7 @@
 #$ -N jackknife_array_job
 #$ -M niushamirhakimi@gmail.com
 #$ -m besa
-#$ -t 1-100:1
+#$ -t 1-1:1
 #$ -cwd
 #$ -S /bin/bash
 
