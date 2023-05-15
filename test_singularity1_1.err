@@ -127,3 +127,59 @@ Out of memory
 terminate called after throwing an instance of 'std::bad_alloc'
   what():  std::bad_alloc
 /mnt/code/test_singularity_fsl.sh: line 8: 31442 Aborted                 (core dumped) melodic -i /mnt/input/DBM_data.nii -o /mnt/code/test/test-1 -d 30 --Oall
+/mnt/code/test_singularity_fsl.sh: line 12: /mnt/out/test.txt: No such file or directory
+Error reading input file: /mnt/out/test/boot.nii.gz
+/opt/sge/default/spool/node24/job_scripts/5369043: line 13: PARENT_DIR_MELODIC: command not found
+mkdir: cannot create directory ‘/test-1’: Permission denied
+mkdir: cannot create directory ‘/test-1-working’: Permission denied
+cp: cannot create regular file '/test-1-working': Permission denied
+/opt/sge/default/spool/node24/job_scripts/5369043: line 34: cd: /test-1-working: No such file or directory
+/mnt/code/test_singularity_fsl.sh: line 12: /data/origami/niusha/out/test.txt: No such file or directory
+/opt/sge/default/spool/node24/job_scripts/5369043: line 49: OUTPUT: command not found
+/opt/sge/default/spool/node24/job_scripts/5369043: line 50: [!: command not found
+/opt/sge/default/spool/node25/job_scripts/5369045: line 13: PARENT_DIR_MELODIC: command not found
+/mnt/code/test_singularity_fsl.sh: line 12: /data/origami/niusha/out/test.txt: No such file or directory
+Error reading input file: /test-1-working/boot.nii.gz
+/opt/sge/default/spool/node25/job_scripts/5369045: line 50: OUTPUT: command not found
+/opt/sge/default/spool/node25/job_scripts/5369045: line 51: [!: command not found
+/opt/sge/default/spool/node17/job_scripts/5369046: line 13: PARENT_DIR_MELODIC: command not found
+/mnt/code/test_singularity_fsl.sh: line 12: /data/origami/niusha/out/test.txt: No such file or directory
+Error reading input file: /test-1-working/boot.nii.gz
+/opt/sge/default/spool/node17/job_scripts/5369046: line 50: OUTPUT: command not found
+/opt/sge/default/spool/node17/job_scripts/5369046: line 51: [!: command not found
+/opt/sge/default/spool/node19/job_scripts/5369047: line 13: PARENT_DIR_MELODIC: command not found
+/mnt/code/test_singularity_fsl.sh: line 12: /data/origami/niusha/out/test.txt: No such file or directory
+/opt/sge/default/spool/node19/job_scripts/5369047: line 48: OUTPUT: command not found
+/opt/sge/default/spool/node19/job_scripts/5369047: line 49: [!: command not found
+/opt/sge/default/spool/node19/job_scripts/5369047: line 56: cd: ./output: No such file or directory
+/opt/sge/default/spool/node21/job_scripts/5369048: line 13: PARENT_DIR_MELODIC: command not found
+/mnt/code/test_singularity_fsl.sh: line 12: /test.txt: No such file or directory
+/opt/sge/default/spool/node21/job_scripts/5369048: line 47: OUTPUT: command not found
+/opt/sge/default/spool/node21/job_scripts/5369048: line 48: [!: command not found
+/opt/sge/default/spool/node21/job_scripts/5369048: line 55: cd: ./output: No such file or directory
+/opt/sge/default/spool/node30/job_scripts/5369049: line 13: PARENT_DIR_MELODIC: command not found
+/mnt/code/test_singularity_fsl.sh: line 15: /test.txt: No such file or directory
+/opt/sge/default/spool/node30/job_scripts/5369049: line 47: OUTPUT: command not found
+/opt/sge/default/spool/node30/job_scripts/5369049: line 48: [!: command not found
+/opt/sge/default/spool/node30/job_scripts/5369049: line 55: cd: ./output: No such file or directory
+/mnt/code/test_singularity_fsl.sh: line 15: /test.txt: No such file or directory
+/opt/sge/default/spool/node18/job_scripts/5369051: line 46: OUTPUT: command not found
+/opt/sge/default/spool/node18/job_scripts/5369051: line 47: [!: command not found
+cp: -r not specified; omitting directory 'mail'
+cp: -r not specified; omitting directory 'some_random_files'
+/opt/sge/default/spool/node21/job_scripts/5369052: line 46: OUTPUT: command not found
+/opt/sge/default/spool/node21/job_scripts/5369052: line 47: [!: command not found
+/opt/sge/default/spool/node17/job_scripts/5369053: line 46: OUTPUT: command not found
+/opt/sge/default/spool/node17/job_scripts/5369053: line 47: [!: command not found
+/opt/sge/default/spool/node27/job_scripts/5369054: line 46: OUTPUT: command not found
+/opt/sge/default/spool/node27/job_scripts/5369054: line 47: [!: command not found
+cp: cannot copy a directory, '/data/origami/niusha/code/experiment/test/test-1-working/.', into itself, 'DESTINATION_DIR'
+/opt/sge/default/spool/node27/job_scripts/5369055: line 46: OUTPUT: command not found
+/opt/sge/default/spool/node27/job_scripts/5369055: line 47: [!: command not found
+cp: cannot copy a directory, '/data/origami/niusha/code/experiment/test/test-1-working/.', into itself, 'DESTINATION_DIR'
+/opt/sge/default/spool/node25/job_scripts/5369056: line 46: OUTPUT: command not found
+/opt/sge/default/spool/node25/job_scripts/5369056: line 47: [!: command not found
+cp: missing destination file operand after '/data/origami/niusha/out/test.txt'
+Try 'cp --help' for more information.
+Error reading input file: /mnt/code/test/test-1/boot.nii.gz
+Error reading input file: /mnt/code/test/test-1/boot.nii.gz

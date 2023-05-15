@@ -264,3 +264,72 @@ file_type      NIFTI-1+
 test 1
 no melodc
 this is new
+no melodc
+fslmerge -t /mnt/out/test/boot.nii.gz
+
+Usage: fslmerge <-x/y/z/t/a/tr> <output> <file1 file2 .......> [tr value in seconds]
+     -t : concatenate images in time
+     -x : concatenate images in the x direction
+     -y : concatenate images in the y direction
+     -z : concatenate images in the z direction
+     -a : auto-choose: single slices -> volume, volumes -> 4D (time series)
+     -tr : concatenate images in time and set the output image tr to the final option value
+this is new
+no melodc
+fslmerge -t /mnt/out/test/boot.nii.gz /mnt/out/DBM_maps_split/vol0000.nii.gz /mnt/out/DBM_maps_split/vol0010.nii.gz /mnt/out/DBM_maps_split/vol0000.nii.gz /mnt/out/DBM_maps_split/vol0150.nii.gz /mnt/out/DBM_maps_split/vol0155.nii.gz /mnt/out/DBM_maps_split/vol0140.nii.gz /mnt/out/DBM_maps_split/vol0190.nii.gz /mnt/out/DBM_maps_split/vol0250.nii.gz /mnt/out/DBM_maps_split/vol0251.nii.gz /mnt/out/DBM_maps_split/vol0100.nii.gz /mnt/out/DBM_maps_split/vol0150.nii.gz
+this is new
+no melodc
+fslmerge -t /mnt/out/test/boot.nii.gz
+
+Usage: fslmerge <-x/y/z/t/a/tr> <output> <file1 file2 .......> [tr value in seconds]
+     -t : concatenate images in time
+     -x : concatenate images in the x direction
+     -y : concatenate images in the y direction
+     -z : concatenate images in the z direction
+     -a : auto-choose: single slices -> volume, volumes -> 4D (time series)
+     -tr : concatenate images in time and set the output image tr to the final option value
+this is new
+no melodc
+fslmerge -t /test-1-working/boot.nii.gz
+
+Usage: fslmerge <-x/y/z/t/a/tr> <output> <file1 file2 .......> [tr value in seconds]
+     -t : concatenate images in time
+     -x : concatenate images in the x direction
+     -y : concatenate images in the y direction
+     -z : concatenate images in the z direction
+     -a : auto-choose: single slices -> volume, volumes -> 4D (time series)
+     -tr : concatenate images in time and set the output image tr to the final option value
+this is new
+no melodc
+fslmerge -t /test-1-working/boot.nii.gz
+
+Usage: fslmerge <-x/y/z/t/a/tr> <output> <file1 file2 .......> [tr value in seconds]
+     -t : concatenate images in time
+     -x : concatenate images in the x direction
+     -y : concatenate images in the y direction
+     -z : concatenate images in the z direction
+     -a : auto-choose: single slices -> volume, volumes -> 4D (time series)
+     -tr : concatenate images in time and set the output image tr to the final option value
+this is new
+fslmerge -t /test-1-working/boot.nii.gz
+fslmerge -t /test-1-working/boot.nii.gz
++++++++++++
+
++++++
+fslmerge -t /test-1-working/boot.nii.gz
++++++++++++
+/mnt/code/test
++++++
+fslmerge -t /mnt/code/test/test-1-working/boot.nii.gz
++++++++++++
+/mnt/code/test
++++++
+fslmerge -t /mnt/code/test/test-1-working/boot.nii.gz /mnt/out/DBM_maps_split/vol0000.nii.gz /mnt/out/DBM_maps_split/vol0010.nii.gz /mnt/out/DBM_maps_split/vol0000.nii.gz /mnt/out/DBM_maps_split/vol0150.nii.gz /mnt/out/DBM_maps_split/vol0155.nii.gz /mnt/out/DBM_maps_split/vol0140.nii.gz /mnt/out/DBM_maps_split/vol0190.nii.gz /mnt/out/DBM_maps_split/vol0250.nii.gz /mnt/out/DBM_maps_split/vol0251.nii.gz /mnt/out/DBM_maps_split/vol0100.nii.gz /mnt/out/DBM_maps_split/vol0150.nii.gz
++++++++++++
+/mnt/code/test
++++++
+fslmerge -t /mnt/code/test/test-1-working/boot.nii.gz /mnt/out/DBM_maps_split/vol0000.nii.gz /mnt/out/DBM_maps_split/vol0010.nii.gz /mnt/out/DBM_maps_split/vol0000.nii.gz /mnt/out/DBM_maps_split/vol0150.nii.gz /mnt/out/DBM_maps_split/vol0155.nii.gz /mnt/out/DBM_maps_split/vol0140.nii.gz /mnt/out/DBM_maps_split/vol0190.nii.gz /mnt/out/DBM_maps_split/vol0250.nii.gz /mnt/out/DBM_maps_split/vol0251.nii.gz /mnt/out/DBM_maps_split/vol0100.nii.gz /mnt/out/DBM_maps_split/vol0150.nii.gz
+/home/bic/niusham
+fslmerge -t /mnt/code/test/test-1-working/boot.nii.gz /mnt/out/DBM_maps_split/vol0000.nii.gz /mnt/out/DBM_maps_split/vol0010.nii.gz /mnt/out/DBM_maps_split/vol0000.nii.gz /mnt/out/DBM_maps_split/vol0150.nii.gz /mnt/out/DBM_maps_split/vol0155.nii.gz /mnt/out/DBM_maps_split/vol0140.nii.gz /mnt/out/DBM_maps_split/vol0190.nii.gz /mnt/out/DBM_maps_split/vol0250.nii.gz /mnt/out/DBM_maps_split/vol0251.nii.gz /mnt/out/DBM_maps_split/vol0100.nii.gz /mnt/out/DBM_maps_split/vol0150.nii.gz
+fslmerge -t /mnt/code/test/test-1-working/boot.nii.gz /mnt/out/DBM_maps_split/vol0000.nii.gz /mnt/out/DBM_maps_split/vol0010.nii.gz /mnt/out/DBM_maps_split/vol0000.nii.gz /mnt/out/DBM_maps_split/vol0150.nii.gz /mnt/out/DBM_maps_split/vol0155.nii.gz /mnt/out/DBM_maps_split/vol0140.nii.gz /mnt/out/DBM_maps_split/vol0190.nii.gz /mnt/out/DBM_maps_split/vol0250.nii.gz /mnt/out/DBM_maps_split/vol0251.nii.gz /mnt/out/DBM_maps_split/vol0100.nii.gz /mnt/out/DBM_maps_split/vol0150.nii.gz
+fslmerge -t /mnt/code/test/test-1-working/boot.nii.gz /mnt/out/DBM_maps_split/vol0000.nii.gz /mnt/out/DBM_maps_split/vol0010.nii.gz /mnt/out/DBM_maps_split/vol0000.nii.gz /mnt/out/DBM_maps_split/vol0150.nii.gz /mnt/out/DBM_maps_split/vol0155.nii.gz /mnt/out/DBM_maps_split/vol0140.nii.gz /mnt/out/DBM_maps_split/vol0190.nii.gz /mnt/out/DBM_maps_split/vol0250.nii.gz /mnt/out/DBM_maps_split/vol0251.nii.gz /mnt/out/DBM_maps_split/vol0100.nii.gz /mnt/out/DBM_maps_split/vol0150.nii.gz
