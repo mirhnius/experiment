@@ -6,13 +6,20 @@
 #$ -t 1-1:1
 #$ -cwd
 #$ -S /bin/bash
-#$ -o $JOB_NAME_$TASK_ID.out
-#$ -e $JOB_NAME_$TASK_ID.err
+
 
 PARENT_DIR="/data/origami/niusha/code/experiment/test"
 PARENT_DIR_MELODIC="/mnt/code/test"
 
-INPUTFILES=(/data/origami/niusha/out/test.txt)
+INPUT_LIST="$PARENT_DIR/filenames.txt"
+
+INPUTFILES=()
+while IFS="" read -r FILENAME || [ -n "$FILENAME" ]
+do
+    INPUTFILES+=($FILENAME)
+
+done < $INPUT_LIST
+echo $INPUTFILES
 
 INPUTFILENAME="${INPUTFILES[$SGE_TASK_ID -1]}"
 DESTINATION_DIR="${PARENT_DIR}/test-$SGE_TASK_ID"
@@ -22,12 +29,16 @@ then
     mkdir -p $DESTINATION_DIR
 fi
 
-cp $INPUTFILENAME $DESTINATION_DIR
+#$ -o "$DESTINATION_DIR/$JOB_NAME_$TASK_ID.out"
+#$ -e "$DESTINATION_DIR/$JOB_NAME_$TASK_ID.err"
+
+# cp $INPUTFILENAME $DESTINATION_DIR
 cd $DESTINATION_DIR
 
-# #Run the program
+# # #Run the program
 export SGE_TASK_ID
 export PARENT_DIR_MELODIC
+export INPUTFILENAME
 
 
 singularity exec --bind /data/origami/niusha/code/experiment:/mnt/code \
@@ -36,4 +47,8 @@ singularity exec --bind /data/origami/niusha/code/experiment:/mnt/code \
 /data/origami/niusha/fsl_python.sif \
 /mnt/code/test_singularity_fsl.sh
 
-# rm ${DESTINATION_DIR}/boot${SGE_TASK_ID}.nii.gz
+mv  ${DESTINATION_DIR}/melodic_Tmodes ${DESTINATION_DIR}/Tmodes
+rm ${DESTINATION_DIR}/eigenvalues_percent
+find ${DESTINATION_DIR} -maxdepth 1 -type f -name "melodic*" -delete
+find ${DESTINATION_DIR} -maxdepth 1 -type f -name "*.nii.gz" -delete 
+

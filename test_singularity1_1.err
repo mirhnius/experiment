@@ -183,3 +183,17 @@ cp: missing destination file operand after '/data/origami/niusha/out/test.txt'
 Try 'cp --help' for more information.
 Error reading input file: /mnt/code/test/test-1/boot.nii.gz
 Error reading input file: /mnt/code/test/test-1/boot.nii.gz
+ERROR:: too many components selected 
+
+rm: cannot remove '/data/origami/niusha/code/experiment/test/test-1/eigenvalues_percent': No such file or directory
+mv: cannot stat '/data/origami/niusha/code/experiment/test/test-1/melodic_Tmodes': No such file or directory
+/mnt/code/test_singularity_fsl.sh: line 12: /data/origami/niusha/code/experiment/test/files_list/cohort0.txt: No such file or directory
+Error reading input file: /mnt/code/test/test-1/boot1.nii.gz
+cp: cannot stat '/mnt/code/test/files_list/cohort0.txt': No such file or directory
+Cannot open volume /mnt/input/DBM_maps_split/0329 for reading!
+Error reading input file: /mnt/code/test/test-1/boot1.nii.gz
+cp: cannot stat '/mnt/code/test/files_list/cohort0.txt': No such file or directory
+/mnt/code/test_singularity_fsl.sh: line 12: /data/origami/niusha/code/experiment/test/files_list/cohort0.txt: No such file or directory
+/mnt/code/test_singularity_fsl.sh: line 12: /data/origami/niusha/code/experiment/test/files_list/cohort0.txt: No such file or directory
+/mnt/code/test_singularity_fsl.sh: line 18: /mnt/code/test/test-1: Is a directory
+/mnt/code/test_singularity_fsl.sh: line 18: cho: command not found

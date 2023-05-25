@@ -1,8 +1,8 @@
 import numpy as np
 import pandas as pd
-from helper import *
+import pathlib
+import helper
 
-#subject_df = pd.read_csv("/mnt/input/subject_IDs.csv")
 subject_df = pd.read_csv("/data/origami/niusha/input/subject_IDs.csv")
 
 
@@ -19,8 +19,8 @@ from random import sample
 PD_sample = sample((PD_index[0]).tolist(), len(PD_index[0]))
 Healthy_sample = sample((Healthy_index[0]).tolist(), len(Healthy_index[0]))
 
-PD_filenames = filename_list(PD_sample)
 
-# Healthy_filenames = filename_list(Healthy_sample)
-write_samples_filename(PD_filenames, 3)
-ICA_decomposition(PD_filenames, 3)
+P = pathlib.Path('/data/origami/niusha/code/experiment/test/files_list')
+filenames = helper.filename_list(PD_sample+Healthy_sample)
+helper.write_samples_filename(filenames, P, 0)
+
