@@ -1,26 +1,15 @@
-import numpy as np
-import pandas as pd
+import sys
+import FSL_helper
 import pathlib
-import helper
+import numpy as np
 
-subject_df = pd.read_csv("/data/origami/niusha/input/subject_IDs.csv")
+sys.path.insert(0, '/data/origami/niusha/code/local-experiment')
+from original_cohort import PD_index, Healthy_index
 
-
-N = len(subject_df.ID)
-ID_map = dict(zip(range(N),subject_df.ID))
-
-Healthy_index = np.where(subject_df.PD == 0)
-Healthy_subject = subject_df.ID.iloc[Healthy_index]
-
-PD_index = np.where(subject_df.PD == 1)
-PD_subject = subject_df.ID.iloc[PD_index]
-
-from random import sample
-PD_sample = sample((PD_index[0]).tolist(), len(PD_index[0]))
-Healthy_sample = sample((Healthy_index[0]).tolist(), len(Healthy_index[0]))
-
+PD_sample = list(np.random.choice(PD_index, len(PD_index)))
+Healthy_sample = list(np.random.choice(Healthy_index, len(Healthy_index)))
 
 P = pathlib.Path('/data/origami/niusha/code/experiment/test/files_list')
-filenames = helper.filename_list(PD_sample+Healthy_sample)
-helper.write_samples_filename(filenames, P, 0)
+filenames = FSL_helper.filename_list(PD_sample+Healthy_sample)
+FSL_helper.write_samples_filename(filenames, P, 0)
 
