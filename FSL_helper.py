@@ -28,7 +28,7 @@ def samples_indices(file_path:pathlib.Path):
     return indices
 
 def store_filenames(path:pathlib.Path, container_path, n, name="cohort"):
-    
+    path.mkdir(exist_ok=True)
     with open(path / "filenames.txt", "w") as f:
         for i in range(n):
             string = container_path + name + "_" + str(i+1) + ".txt \n"

@@ -1,16 +1,31 @@
 #!/bin/bash
 #$ -N test_singularity1
 #$ -l h_vmem=8G
-#$ -M niushamirhakimi@gmail.com
-#$ -m besa
-#$ -t 1-10:1
+#$ -t 1-100:1
 #$ -cwd
 #$ -S /bin/bash
-#$ -o "/data/origami/niusha/code/experiment/test/out/$JOB_NAME_$TASK_ID.out"
-#$ -e "/data/origami/niusha/code/experiment/test/err/$JOB_NAME_$TASK_ID.err"
+#$ -o "/data/origami/niusha/out/$JOB_NAME/out/$JOB_NAME_$TASK_ID.out"
+#$ -e "/data/origami/niusha/out/$JOB_NAME/err/$JOB_NAME_$TASK_ID.err"
 
-PARENT_DIR="/data/origami/niusha/code/experiment/test"
-PARENT_DIR_MELODIC="/mnt/code/test"
+PARENT_DIR="/data/origami/niusha/out/$JOB_NAME"
+PARENT_DIR_MELODIC="/mnt/out/$JOB_NAME"
+
+if [ ! -d "$PARENT_DIR" ]
+then 
+    mkdir -p $PARENT_DIR
+fi
+
+# if [ ! -d "$PARENT_DIR/out" ]
+
+# then 
+#     mkdir -p "$PARENT_DIR/out"
+# fi
+
+# if [ ! -d "$PARENT_DIR/err" ]
+
+# then 
+#     mkdir -p "$PARENT_DIR/err"
+# fi
 
 INPUT_LIST="$PARENT_DIR/filenames.txt"
 
