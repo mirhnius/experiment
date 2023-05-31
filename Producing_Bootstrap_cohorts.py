@@ -23,4 +23,4 @@ for i in range(n):
     filenames = FSL_helper.filename_list(PD_sample+Healthy_sample)
     FSL_helper.write_samples_filename(filenames, P, i)
 
-FSL_helper.store_filenames(P.parent, args.comtainer_path, n)
+FSL_helper.store_filenames(P.parent, args.container_path, n)

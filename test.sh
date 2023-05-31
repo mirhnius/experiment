@@ -1,7 +1,7 @@
 #!/bin/bash
 #$ -N test_singularity1
-#$ -l h_vmem=8G
-#$ -t 1-100:1
+#$ -l h_vmem=7G
+#$ -t 1-500:1
 #$ -cwd
 #$ -S /bin/bash
 #$ -o "/data/origami/niusha/out/$JOB_NAME/out/$JOB_NAME_$TASK_ID.out"
