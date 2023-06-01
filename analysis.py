@@ -41,16 +41,13 @@ for i in range(n):
 
     for j in range(30):
         Tstat[0,j], Pval[0,j] = ttest_ind(Healthy_tmodes[:,j], PD_tmodes[:,j], alternative="less")
+
     
-    p_corrected = multipletests(Pval[0,:], alpha=0.05,
-              method="bonferroni", is_sorted=False,
-              returnsorted=False)
-    
-    idx_p = np.argmin(p_corrected[1][:])
+    idx_p = np.argmin(Pval[0,:])
     idx_t = np.argmin(Tstat[0,:])
     # idx_p and idx_t must be same for one sided t-test
     max_t[0,i] = Tstat[0, idx_t]
-    min_p[0,i] = Pval[0, idx_p]
+    min_p[0,i] = Pval[0, idx_p] * 30 if Pval[0, idx_p] * 30 <= 1 else 1
     print(idx_p, Pval[0,idx_p], idx_t, Tstat[0,idx_t])
     
 
@@ -68,7 +65,9 @@ for i in range(2):
 f.savefig(f"test{n}.png")
 
 print(len(min_p[0,(min_p[0,:] <= 0.05)]))
-print(min_p[0,(min_p[0,:] <= 0.05)])
+# print(min_p[0,(min_p[0,:] <= 0.05)])
+
+# print(min_p)
 
 # import random
 # shuffeled_index = random.shuffle(len(Healthy_bootstrapped_cohort)*[0] + len(PD_bootstrapped_cohort)*[1])
