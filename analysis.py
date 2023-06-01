@@ -9,6 +9,7 @@ import argparse
 import FSL_helper
 import numpy as np
 from scipy.stats import ttest_ind
+from statsmodels.stats.multitest import multipletests
 
 parser = argparse.ArgumentParser()
 parser.add_argument("iteration_number", type=int,
@@ -40,32 +41,34 @@ for i in range(n):
 
     for j in range(30):
         Tstat[0,j], Pval[0,j] = ttest_ind(Healthy_tmodes[:,j], PD_tmodes[:,j], alternative="less")
-
-    idx_p = np.argmin(Pval[0,:])
+    
+    p_corrected = multipletests(Pval[0,:], alpha=0.05,
+              method="bonferroni", is_sorted=False,
+              returnsorted=False)
+    
+    idx_p = np.argmin(p_corrected[1][:])
     idx_t = np.argmin(Tstat[0,:])
     # idx_p and idx_t must be same for one sided t-test
     max_t[0,i] = Tstat[0, idx_t]
     min_p[0,i] = Pval[0, idx_p]
     print(idx_p, Pval[0,idx_p], idx_t, Tstat[0,idx_t])
     
-from statsmodels.stats.multitest import multipletests
-min_p_corrected = multipletests(min_p[0,:], alpha=0.05,
-              method="bonferroni", is_sorted=False,
-              returnsorted=False)
+
+
 
 import matplotlib.pyplot as plt
 import seaborn as sns
 
 f, ax = plt.subplots(nrows=1, ncols=2, figsize=(7,5))
 entry_name = ["p-value", "t-statistic"]
-entry = [min_p_corrected[1][:], max_t[0,:]]
+entry = [min_p[0,:], max_t[0,:]]
 for i in range(2):
     ax[i] = sns.histplot(entry[i], ax=ax[i], bins=10)
     ax[i].title.set_text(entry_name[i])
 f.savefig(f"test{n}.png")
 
-print(len(min_p_corrected[1][min_p_corrected[1][:] <= 0.05]))
-print(min_p_corrected[1][min_p_corrected[1][:] <= 0.05])
+print(len(min_p[0,(min_p[0,:] <= 0.05)]))
+print(min_p[0,(min_p[0,:] <= 0.05)])
 
 # import random
 # shuffeled_index = random.shuffle(len(Healthy_bootstrapped_cohort)*[0] + len(PD_bootstrapped_cohort)*[1])
