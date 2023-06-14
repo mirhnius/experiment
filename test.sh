@@ -59,7 +59,7 @@ singularity exec --bind /data/origami/niusha/code/experiment:/mnt/code \
 --bind /data/origami/niusha/input:/mnt/input:ro \
 --bind /data/origami/niusha/out:/mnt/out \
 /data/origami/niusha/fsl_python.sif \
-/mnt/code/test_singularity_fsl.sh
+/mnt/code/test_singularity_fsl.sh 
 
 
 mv  ${DESTINATION_DIR}/melodic_Tmodes ${DESTINATION_DIR}/Tmodes

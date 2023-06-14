@@ -1,0 +1,1 @@
+melodic -i /mnt/input/DBM_data.nii -o /mnt/out/ica_original_maps -d 30 --Oall 
